@@ -1,0 +1,335 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlightCardDetails snapshot 1`] = `
+<div
+  className="UNKNOWN"
+>
+  <div>
+    <FlightLeg
+      flightLeg={
+        Object {
+          "Arrival": "2019-10-15T14:35:00",
+          "CarrierIds": Array [
+            885,
+            1033,
+          ],
+          "Carriers": Array [
+            Object {
+              "Code": "BE",
+              "DisplayCode": "BE",
+              "Id": 885,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "Name": "Flybe",
+            },
+            Object {
+              "Code": "EI",
+              "DisplayCode": "EI",
+              "Id": 1033,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "Name": "Aer Lingus",
+            },
+          ],
+          "Departure": "2019-10-15T07:20:00",
+          "DestinationStation": Object {
+            "Code": "LHR",
+            "Id": 13554,
+            "Name": "London Heathrow",
+            "ParentId": 4698,
+            "Type": "Airport",
+          },
+          "DestinationStationId": 13554,
+          "Directionality": "Outbound",
+          "Duration": 435,
+          "FlightNumbers": Array [
+            Object {
+              "Carrier": Object {
+                "Code": "BE",
+                "DisplayCode": "BE",
+                "Id": 885,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                "Name": "Flybe",
+              },
+              "CarrierId": 885,
+              "FlightNumber": "681",
+            },
+            Object {
+              "Carrier": Object {
+                "Code": "EI",
+                "DisplayCode": "EI",
+                "Id": 1033,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "Name": "Aer Lingus",
+              },
+              "CarrierId": 1033,
+              "FlightNumber": "934",
+            },
+          ],
+          "Id": "11235-1910150720--32302,-32753-1-13554-1910151435",
+          "JourneyMode": "Flight",
+          "OperatingCarrierIds": Array [
+            885,
+            1033,
+          ],
+          "OperatingCarriers": Array [
+            Object {
+              "Code": "BE",
+              "DisplayCode": "BE",
+              "Id": 885,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+              "Name": "Flybe",
+            },
+            Object {
+              "Code": "EI",
+              "DisplayCode": "EI",
+              "Id": 1033,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+              "Name": "Aer Lingus",
+            },
+          ],
+          "OriginStation": Object {
+            "Code": "EDI",
+            "Id": 11235,
+            "Name": "Edinburgh",
+            "ParentId": 2343,
+            "Type": "Airport",
+          },
+          "OriginStationId": 11235,
+          "SegmentIds": Array [
+            0,
+            1,
+          ],
+          "Segments": Array [
+            Object {
+              "ArrivalDateTime": "2019-10-15T08:15:00",
+              "Carrier": Object {
+                "Code": "BE",
+                "DisplayCode": "BE",
+                "Id": 885,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                "Name": "Flybe",
+              },
+              "CarrierId": 885,
+              "DepartureDateTime": "2019-10-15T07:20:00",
+              "DestinationStation": Object {
+                "Code": "BHD",
+                "Id": 9889,
+                "Name": "Belfast City",
+                "ParentId": 876,
+                "Type": "Airport",
+              },
+              "DestinationStationId": 9889,
+              "Directionality": "Outbound",
+              "Duration": 55,
+              "FlightNumber": "681",
+              "Id": 0,
+              "JourneyMode": "Flight",
+              "OperatingCarrier": Object {
+                "Code": "BE",
+                "DisplayCode": "BE",
+                "Id": 885,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                "Name": "Flybe",
+              },
+              "OperatingCarrierId": 885,
+              "OriginStation": Object {
+                "Code": "EDI",
+                "Id": 11235,
+                "Name": "Edinburgh",
+                "ParentId": 2343,
+                "Type": "Airport",
+              },
+              "OriginStationId": 11235,
+            },
+            Object {
+              "ArrivalDateTime": "2019-10-15T14:35:00",
+              "Carrier": Object {
+                "Code": "EI",
+                "DisplayCode": "EI",
+                "Id": 1033,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "Name": "Aer Lingus",
+              },
+              "CarrierId": 1033,
+              "DepartureDateTime": "2019-10-15T13:10:00",
+              "DestinationStation": Object {
+                "Code": "LHR",
+                "Id": 13554,
+                "Name": "London Heathrow",
+                "ParentId": 4698,
+                "Type": "Airport",
+              },
+              "DestinationStationId": 13554,
+              "Directionality": "Outbound",
+              "Duration": 85,
+              "FlightNumber": "934",
+              "Id": 1,
+              "JourneyMode": "Flight",
+              "OperatingCarrier": Object {
+                "Code": "EI",
+                "DisplayCode": "EI",
+                "Id": 1033,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                "Name": "Aer Lingus",
+              },
+              "OperatingCarrierId": 1033,
+              "OriginStation": Object {
+                "Code": "BHD",
+                "Id": 9889,
+                "Name": "Belfast City",
+                "ParentId": 876,
+                "Type": "Airport",
+              },
+              "OriginStationId": 9889,
+            },
+          ],
+          "StopIds": Array [
+            9889,
+          ],
+          "Stops": Array [
+            Object {
+              "Code": "BHD",
+              "Id": 9889,
+              "Name": "Belfast City",
+              "ParentId": 876,
+              "Type": "Airport",
+            },
+          ],
+        }
+      }
+    />
+    <FlightLeg
+      flightLeg={
+        Object {
+          "Arrival": "2019-10-16T20:30:00",
+          "CarrierIds": Array [
+            881,
+          ],
+          "Carriers": Array [
+            Object {
+              "Code": "BA",
+              "DisplayCode": "BA",
+              "Id": 881,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "Name": "British Airways",
+            },
+          ],
+          "Departure": "2019-10-16T19:05:00",
+          "DestinationStation": Object {
+            "Code": "EDI",
+            "Id": 11235,
+            "Name": "Edinburgh",
+            "ParentId": 2343,
+            "Type": "Airport",
+          },
+          "DestinationStationId": 11235,
+          "Directionality": "Inbound",
+          "Duration": 85,
+          "FlightNumbers": Array [
+            Object {
+              "Carrier": Object {
+                "Code": "BA",
+                "DisplayCode": "BA",
+                "Id": 881,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "Name": "British Airways",
+              },
+              "CarrierId": 881,
+              "FlightNumber": "1458",
+            },
+          ],
+          "Id": "13554-1910161905--32480-0-11235-1910162030",
+          "JourneyMode": "Flight",
+          "OperatingCarrierIds": Array [
+            881,
+          ],
+          "OperatingCarriers": Array [
+            Object {
+              "Code": "BA",
+              "DisplayCode": "BA",
+              "Id": 881,
+              "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+              "Name": "British Airways",
+            },
+          ],
+          "OriginStation": Object {
+            "Code": "LHR",
+            "Id": 13554,
+            "Name": "London Heathrow",
+            "ParentId": 4698,
+            "Type": "Airport",
+          },
+          "OriginStationId": 13554,
+          "SegmentIds": Array [
+            2,
+          ],
+          "Segments": Array [
+            Object {
+              "ArrivalDateTime": "2019-10-16T20:30:00",
+              "Carrier": Object {
+                "Code": "BA",
+                "DisplayCode": "BA",
+                "Id": 881,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "Name": "British Airways",
+              },
+              "CarrierId": 881,
+              "DepartureDateTime": "2019-10-16T19:05:00",
+              "DestinationStation": Object {
+                "Code": "EDI",
+                "Id": 11235,
+                "Name": "Edinburgh",
+                "ParentId": 2343,
+                "Type": "Airport",
+              },
+              "DestinationStationId": 11235,
+              "Directionality": "Inbound",
+              "Duration": 85,
+              "FlightNumber": "1458",
+              "Id": 2,
+              "JourneyMode": "Flight",
+              "OperatingCarrier": Object {
+                "Code": "BA",
+                "DisplayCode": "BA",
+                "Id": 881,
+                "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                "Name": "British Airways",
+              },
+              "OperatingCarrierId": 881,
+              "OriginStation": Object {
+                "Code": "LHR",
+                "Id": 13554,
+                "Name": "London Heathrow",
+                "ParentId": 4698,
+                "Type": "Airport",
+              },
+              "OriginStationId": 13554,
+            },
+          ],
+          "StopIds": Array [],
+          "Stops": Array [],
+        }
+      }
+    />
+  </div>
+  <div
+    className="UNKNOWN"
+  >
+    <div
+      className="UNKNOWN"
+    >
+      <p>
+        £
+        502.38
+      </p>
+      <p
+        className="UNKNOWN"
+      >
+        ebookers
+      </p>
+    </div>
+    <button>
+      Select
+    </button>
+  </div>
+</div>
+`;

@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlightLeg should render correctly 1`] = `
+<div
+  className="UNKNOWN"
+>
+  <div
+    className="UNKNOWN"
+  >
+    <span
+      className="UNKNOWN"
+    >
+      <img
+        alt="BA"
+        className="UNKNOWN"
+        src="https://s1.apideeplink.com/images/airlines/BA.png"
+      />
+    </span>
+    <div
+      className="UNKNOWN"
+    >
+      <p>
+        11:05
+      </p>
+      <p>
+        LHR
+      </p>
+    </div>
+    <img
+      alt="To"
+      className="UNKNOWN"
+      src="right-arrow.svg"
+    />
+    <div
+      className="UNKNOWN"
+    >
+      <p>
+        12:30
+      </p>
+      <p>
+        EDI
+      </p>
+    </div>
+  </div>
+  <div
+    className="UNKNOWN"
+  >
+    <p>
+      1h 25m
+    </p>
+    <p
+      className="UNKNOWN"
+    >
+      Direct
+    </p>
+  </div>
+</div>
+`;

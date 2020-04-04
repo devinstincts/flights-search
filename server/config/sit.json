@@ -1,0 +1,4 @@
+{
+    "flightSearchUrl": "http://<SIT_ENV_HOST_NAME>/flights",
+    "port": 5000
+}

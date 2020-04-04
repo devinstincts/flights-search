@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FlightsActionSection should render correctly 1`] = `
+<div
+  className="UNKNOWN"
+>
+  <div
+    className="UNKNOWN"
+  >
+    <span>
+      Filter
+    </span>
+    <span>
+      Sort
+    </span>
+  </div>
+  <div>
+    <img
+      alt="Alerts"
+      className="UNKNOWN"
+      src="notification.svg"
+    />
+    <span>
+      Price alerts
+    </span>
+  </div>
+</div>
+`;

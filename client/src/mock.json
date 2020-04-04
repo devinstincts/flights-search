@@ -1,0 +1,366 @@
+{
+    "Currencies": [
+        {
+            "Code": "GBP",
+            "Symbol": "£",
+            "ThousandsSeparator": ",",
+            "DecimalSeparator": ".",
+            "SymbolOnLeft": true,
+            "SpaceBetweenAmountAndSymbol": false,
+            "RoundingCoefficient": 0,
+            "DecimalDigits": 2
+        }
+    ],
+    "Status": "UpdatesComplete",
+    "Query": {
+        "Country": "GB",
+        "Currency": "GBP",
+        "Locale": "en-GB",
+        "Adults": 1,
+        "Children": 0,
+        "Infants": 0,
+        "OriginPlace": {
+            "Id": 2343,
+            "ParentId": 247,
+            "Code": "EDI",
+            "Type": "City",
+            "Name": "Edinburgh"
+        },
+        "DestinationPlace": {
+            "Id": 13554,
+            "ParentId": 4698,
+            "Code": "LHR",
+            "Type": "Airport",
+            "Name": "London Heathrow"
+        },
+        "OutboundDate": "2019-10-15",
+        "InboundDate": "2019-10-16",
+        "LocationSchema": "Default",
+        "CabinClass": "economy",
+        "GroupPricing": false
+    },
+    "Itineraries": [
+        {
+            "OutboundLegId": "11235-1910150720--32302,-32753-1-13554-1910151435",
+            "InboundLegId": "13554-1910161905--32480-0-11235-1910162030",
+            "PricingOptions": [
+                {
+                    "Agents": [
+                        {
+                            "Id": 2365707,
+                            "Name": "ebookers",
+                            "ImageUrl": "https://s1.apideeplink.com/images/websites/ebuk.png",
+                            "Status": "UpdatesComplete",
+                            "OptimisedForMobile": true,
+                            "Type": "TravelAgent"
+                        }
+                    ],
+                    "QuoteAgeInMinutes": 21,
+                    "Price": 502.38
+                }
+            ],
+            "BookingDetailsLink": {
+                "Uri": "/apiservices/pricing/v1.0/a4ca83a5-b334-4e6e-979e-148e87e200af/booking",
+                "Body": "OutboundLegId=11235-1910150720--32302,-32753-1-13554-1910151435&InboundLegId=13554-1910161905--32480-0-11235-1910162030",
+                "Method": "PUT"
+            },
+            "inboundLeg": {
+                "Id": "13554-1910161905--32480-0-11235-1910162030",
+                "SegmentIds": [
+                    2
+                ],
+                "OriginStation": {
+                    "Id": 13554,
+                    "ParentId": 4698,
+                    "Code": "LHR",
+                    "Type": "Airport",
+                    "Name": "London Heathrow"
+                },
+                "DestinationStation": {
+                    "Id": 11235,
+                    "ParentId": 2343,
+                    "Code": "EDI",
+                    "Type": "Airport",
+                    "Name": "Edinburgh"
+                },
+                "Departure": "2019-10-16T19:05:00",
+                "Arrival": "2019-10-16T20:30:00",
+                "Duration": 85,
+                "JourneyMode": "Flight",
+                "Stops": [],
+                "Carriers": [
+                    {
+                        "Id": 881,
+                        "Code": "BA",
+                        "Name": "British Airways",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                        "DisplayCode": "BA"
+                    }
+                ],
+                "OperatingCarriers": [
+                    {
+                        "Id": 881,
+                        "Code": "BA",
+                        "Name": "British Airways",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                        "DisplayCode": "BA"
+                    }
+                ],
+                "Directionality": "Inbound",
+                "FlightNumbers": [
+                    {
+                        "FlightNumber": "1458",
+                        "CarrierId": 881,
+                        "Carrier": {
+                            "Id": 881,
+                            "Code": "BA",
+                            "Name": "British Airways",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                            "DisplayCode": "BA"
+                        }
+                    }
+                ],
+                "Segments": [
+                    {
+                        "Id": 2,
+                        "OriginStation": {
+                            "Id": 13554,
+                            "ParentId": 4698,
+                            "Code": "LHR",
+                            "Type": "Airport",
+                            "Name": "London Heathrow"
+                        },
+                        "DestinationStation": {
+                            "Id": 11235,
+                            "ParentId": 2343,
+                            "Code": "EDI",
+                            "Type": "Airport",
+                            "Name": "Edinburgh"
+                        },
+                        "DepartureDateTime": "2019-10-16T19:05:00",
+                        "ArrivalDateTime": "2019-10-16T20:30:00",
+                        "Carrier": {
+                            "Id": 881,
+                            "Code": "BA",
+                            "Name": "British Airways",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                            "DisplayCode": "BA"
+                        },
+                        "OperatingCarrier": {
+                            "Id": 881,
+                            "Code": "BA",
+                            "Name": "British Airways",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BA.png",
+                            "DisplayCode": "BA"
+                        },
+                        "Duration": 85,
+                        "FlightNumber": "1458",
+                        "JourneyMode": "Flight",
+                        "Directionality": "Inbound",
+                        "CarrierId": 881,
+                        "OperatingCarrierId": 881,
+                        "DestinationStationId": 11235,
+                        "OriginStationId": 13554
+                    }
+                ],
+                "StopIds": [],
+                "CarrierIds": [
+                    881
+                ],
+                "OperatingCarrierIds": [
+                    881
+                ],
+                "DestinationStationId": 11235,
+                "OriginStationId": 13554
+            },
+            "outboundLeg": {
+                "Id": "11235-1910150720--32302,-32753-1-13554-1910151435",
+                "SegmentIds": [
+                    0,
+                    1
+                ],
+                "OriginStation": {
+                    "Id": 11235,
+                    "ParentId": 2343,
+                    "Code": "EDI",
+                    "Type": "Airport",
+                    "Name": "Edinburgh"
+                },
+                "DestinationStation": {
+                    "Id": 13554,
+                    "ParentId": 4698,
+                    "Code": "LHR",
+                    "Type": "Airport",
+                    "Name": "London Heathrow"
+                },
+                "Departure": "2019-10-15T07:20:00",
+                "Arrival": "2019-10-15T14:35:00",
+                "Duration": 435,
+                "JourneyMode": "Flight",
+                "Stops": [
+                    {
+                        "Id": 9889,
+                        "ParentId": 876,
+                        "Code": "BHD",
+                        "Type": "Airport",
+                        "Name": "Belfast City"
+                    }
+                ],
+                "Carriers": [
+                    {
+                        "Id": 885,
+                        "Code": "BE",
+                        "Name": "Flybe",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                        "DisplayCode": "BE"
+                    },
+                    {
+                        "Id": 1033,
+                        "Code": "EI",
+                        "Name": "Aer Lingus",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                        "DisplayCode": "EI"
+                    }
+                ],
+                "OperatingCarriers": [
+                    {
+                        "Id": 885,
+                        "Code": "BE",
+                        "Name": "Flybe",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                        "DisplayCode": "BE"
+                    },
+                    {
+                        "Id": 1033,
+                        "Code": "EI",
+                        "Name": "Aer Lingus",
+                        "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                        "DisplayCode": "EI"
+                    }
+                ],
+                "Directionality": "Outbound",
+                "FlightNumbers": [
+                    {
+                        "FlightNumber": "681",
+                        "CarrierId": 885,
+                        "Carrier": {
+                            "Id": 885,
+                            "Code": "BE",
+                            "Name": "Flybe",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                            "DisplayCode": "BE"
+                        }
+                    },
+                    {
+                        "FlightNumber": "934",
+                        "CarrierId": 1033,
+                        "Carrier": {
+                            "Id": 1033,
+                            "Code": "EI",
+                            "Name": "Aer Lingus",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                            "DisplayCode": "EI"
+                        }
+                    }
+                ],
+                "Segments": [
+                    {
+                        "Id": 0,
+                        "OriginStation": {
+                            "Id": 11235,
+                            "ParentId": 2343,
+                            "Code": "EDI",
+                            "Type": "Airport",
+                            "Name": "Edinburgh"
+                        },
+                        "DestinationStation": {
+                            "Id": 9889,
+                            "ParentId": 876,
+                            "Code": "BHD",
+                            "Type": "Airport",
+                            "Name": "Belfast City"
+                        },
+                        "DepartureDateTime": "2019-10-15T07:20:00",
+                        "ArrivalDateTime": "2019-10-15T08:15:00",
+                        "Carrier": {
+                            "Id": 885,
+                            "Code": "BE",
+                            "Name": "Flybe",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                            "DisplayCode": "BE"
+                        },
+                        "OperatingCarrier": {
+                            "Id": 885,
+                            "Code": "BE",
+                            "Name": "Flybe",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/BE.png",
+                            "DisplayCode": "BE"
+                        },
+                        "Duration": 55,
+                        "FlightNumber": "681",
+                        "JourneyMode": "Flight",
+                        "Directionality": "Outbound",
+                        "CarrierId": 885,
+                        "OperatingCarrierId": 885,
+                        "DestinationStationId": 9889,
+                        "OriginStationId": 11235
+                    },
+                    {
+                        "Id": 1,
+                        "OriginStation": {
+                            "Id": 9889,
+                            "ParentId": 876,
+                            "Code": "BHD",
+                            "Type": "Airport",
+                            "Name": "Belfast City"
+                        },
+                        "DestinationStation": {
+                            "Id": 13554,
+                            "ParentId": 4698,
+                            "Code": "LHR",
+                            "Type": "Airport",
+                            "Name": "London Heathrow"
+                        },
+                        "DepartureDateTime": "2019-10-15T13:10:00",
+                        "ArrivalDateTime": "2019-10-15T14:35:00",
+                        "Carrier": {
+                            "Id": 1033,
+                            "Code": "EI",
+                            "Name": "Aer Lingus",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                            "DisplayCode": "EI"
+                        },
+                        "OperatingCarrier": {
+                            "Id": 1033,
+                            "Code": "EI",
+                            "Name": "Aer Lingus",
+                            "ImageUrl": "https://s1.apideeplink.com/images/airlines/EI.png",
+                            "DisplayCode": "EI"
+                        },
+                        "Duration": 85,
+                        "FlightNumber": "934",
+                        "JourneyMode": "Flight",
+                        "Directionality": "Outbound",
+                        "CarrierId": 1033,
+                        "OperatingCarrierId": 1033,
+                        "DestinationStationId": 13554,
+                        "OriginStationId": 9889
+                    }
+                ],
+                "StopIds": [
+                    9889
+                ],
+                "CarrierIds": [
+                    885,
+                    1033
+                ],
+                "OperatingCarrierIds": [
+                    885,
+                    1033
+                ],
+                "DestinationStationId": 13554,
+                "OriginStationId": 11235
+            }
+        }
+    ]
+}

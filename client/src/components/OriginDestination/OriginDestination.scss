@@ -1,0 +1,19 @@
+@import '~bpk-mixins';
+
+.OriginDestination {
+    &__container {
+        padding: 15px 10px;
+        background: #00b2d6;
+        color: #fff;
+        margin: 0 -10px 15px;
+    }
+
+    &__origin, &__destination {
+        font-size: 35px;
+    }
+
+    &__right-icon {
+        height: 1rem;
+        margin: 0 10px 5px;
+    }
+}

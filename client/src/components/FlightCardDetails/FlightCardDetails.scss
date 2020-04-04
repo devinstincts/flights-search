@@ -1,0 +1,94 @@
+@import '~bpk-mixins';
+
+.FlightCardDetails {
+    margin: 0 0 20px 0;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    &__parent-container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    &__origin-details, 
+    &__destination-details {
+        p {
+            margin: 0;
+            font-size: 14px;
+            line-height: normal;
+
+            &:first-child {
+                margin: 0 0 10px;
+            }
+        }
+    }
+
+    &__origin-details {
+        margin-right: 15px;
+    }
+
+    &__duration-details {
+        p {
+            font-size: 12px;
+            margin: 0;
+            line-height: normal;
+
+            &:first-child {
+                margin: 0 0 10px;
+            }
+        }
+    }
+
+    &__OND {
+        &-container {
+            display: flex;
+            flex-direction: row;
+        }
+        &-icon {
+            margin-right: 10px;
+        }
+        &-right-icon {
+            margin-right: 15px; 
+        }
+        &-carrier-image {
+            width: 60px;
+            height: 30px;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        &-amount {
+            p {
+                margin: 0;
+                // line-height: normal;
+                &:first-child {
+                    font-size: 20px;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        &-agent {
+            color: #B0B0B1;
+        }   
+
+        button {
+            padding: 5px 30px;
+            background: #00ca6e;
+            border-radius: 25px;
+            color: #fff;
+            border: 0;
+            font-weight: 700;
+            height: 35px;
+            font-size: 1rem;
+            margin-bottom: 8px;            
+        }
+    }
+}

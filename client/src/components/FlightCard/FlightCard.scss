@@ -1,0 +1,8 @@
+@import '~bpk-mixins';
+
+.FlightCard {
+    &__container {
+        background: #f6f6f6;
+        padding: 10px;
+    }
+}
