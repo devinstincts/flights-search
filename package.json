@@ -13,8 +13,8 @@
     "lint:server": "(cd ./server && npm run lint)",
     "lint:all": "npm-run-all lint:client lint:server",
 
-    "test:client": "(cd ./client && CI=true npm test)",
-    "test:server": "(cd ./server && CI=true npm test)",
+    "test:client": "(cd ./client && npm test)",
+    "test:server": "(cd ./server && npm test)",
     "test:all": "npm-run-all test:client test:server",
 
     "build:client": "(cd ./client && npm run build)",
