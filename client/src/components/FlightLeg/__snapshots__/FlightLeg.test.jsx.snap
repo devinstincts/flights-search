@@ -20,7 +20,7 @@ exports[`FlightLeg should render correctly 1`] = `
       className="UNKNOWN"
     >
       <p>
-        11:05
+        19:05
       </p>
       <p>
         LHR
@@ -35,7 +35,7 @@ exports[`FlightLeg should render correctly 1`] = `
       className="UNKNOWN"
     >
       <p>
-        12:30
+        20:30
       </p>
       <p>
         EDI

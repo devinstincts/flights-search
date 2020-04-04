@@ -23,7 +23,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.19.0",
     "jest": "^24.9.0",
-    "react-test-renderer": "^16.10.2"
+    "react-test-renderer": "^16.10.2",
+    "stylelint-config-standard": "^20.0.0"
   },
   "proxy": "http://localhost:4000",
   "dependencies": {
