@@ -11,7 +11,7 @@ branches:
   only:
     - master
 script:
-    - npm lint
-    - npm test
-    - npm install
+    - npm install:all
+    - npm lint:all
+    - npm test:all
     - npm build
