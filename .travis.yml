@@ -5,12 +5,8 @@ env:
   global:
     - NPM_CONFIG_LOGLEVEL=warn
 before_install:
-  - nvm install
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
   - chmod +x ./cc-test-reporter
-install:
-  - bundle install --without production --path=${BUNDLE_PATH:-vendor/bundle}  # Install ruby gems, excluding production only gems such as unicorn (already present by default in Travis)
-  - npm install
 cache:
   directories:
     - "node_modules"
