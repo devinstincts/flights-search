@@ -13,8 +13,6 @@ cache:
 branches:
   only:
     - master
-# Setup the database
-before_script: bundle exec rake db:create db:migrate
 script:
     - npm run install:all
     - npm run lint:all
