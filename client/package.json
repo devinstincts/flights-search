@@ -18,6 +18,7 @@
     "@babel/preset-react": "^7.9.4",
     "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^22.4.1",
     "babel-preset-react-app": "^9.1.2",
     "codecov": "^3.6.5",
     "enzyme": "^3.10.0",
@@ -34,6 +35,10 @@
   "proxy": "http://localhost:4000",
   "dependencies": {
     "axios": "^0.19.0",
+    "backpack-react-scripts": "^5.1.1",
+    "bpk-component-text": "^1.2.2",
+    "bpk-mixins": "^17.6.1",
+    "bpk-stylesheets": "^3.2.100",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
     "react": "^16.10.2",

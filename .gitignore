@@ -11,11 +11,12 @@ lerna-debug.log*
 node_modules/
 
 ### Client
-./client/node_modules/
-./client/build/
-./client/coverage/
+client/node_modules/
+client/build/
+client/coverage/
+client/coverage/
 
 ### Server
-./server/node_modules/
-./server/build/
+server/node_modules/
+server/build/
 server/coverage/
