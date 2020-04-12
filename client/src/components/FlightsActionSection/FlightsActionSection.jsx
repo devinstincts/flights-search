@@ -1,17 +1,15 @@
 import React from 'react';
-import STYLES from './FlightsAction.scss';
 import alertIcon from './notification.svg';
-
-const c = (className) => STYLES[className] || 'UNKNOWN';
+import './FlightAction.css';
 
 const FlightsActionSection = () => (
-  <div className={c('FlightsAction')}>
-    <div className={c('FlightsAction__filter-section')}>
-      <span>Filter</span>
-      <span>Sort</span>
+  <div className="flightActionsContainer">
+    <div className="flightSortFilterActionContainer">
+      <span className="flight-filter-sort-action">Filter</span>
+      <span className="flight-filter-sort-action">Sort</span>
     </div>
-    <div>
-      <img className={c('FlightsAction__alert-image')} alt="Alerts" src={alertIcon} />
+    <div className="flightPriceAlterContainer">
+      <img className="flight-action-image" alt="Alerts" src={alertIcon} />
       <span>Price alerts</span>
     </div>
   </div>

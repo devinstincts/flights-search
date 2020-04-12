@@ -6,7 +6,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test:jest": "jest",
+    "test:jest": "jest --detectOpenHandles --config jest.config.js",
+    "test:coverage": "set CI=true && react-scripts test --coverage",
     "lint:scss": "stylelint 'src/**/*.scss' --syntax scss",
     "lint:scss:fix": "stylefmt --recursive 'src/**/*.scss'",
     "lint:js": "eslint . --ext .js,.jsx",
@@ -14,12 +15,7 @@
     "lint": "npm run lint:js"
   },
   "devDependencies": {
-    "@babel/preset-env": "^7.9.5",
-    "@babel/preset-react": "^7.9.4",
-    "babel-cli": "^6.26.0",
     "babel-eslint": "^10.1.0",
-    "babel-preset-react-app": "^9.1.2",
-    "codecov": "^3.6.5",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.15.1",
     "eslint": "^6.8.0",

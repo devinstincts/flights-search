@@ -2,21 +2,22 @@
 
 exports[`Header should render correctly 1`] = `
 <header
-  className="UNKNOWN"
+  className="headerContainer"
 >
   <a
+    className="header-anchor"
     href="/"
   >
+    <img
+      alt="Atlavik"
+      className="header-logo"
+      src="Atlavik.svg"
+    />
     <span
-      className="UNKNOWN"
+      className="header-company-name"
     >
       Atlavik
     </span>
-    <img
-      alt="Atlavik"
-      className="UNKNOWN"
-      src="Atlavik.svg"
-    />
   </a>
 </header>
 `;

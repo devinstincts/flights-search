@@ -1,23 +1,21 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import STYLES from './FlightCardDetails.scss';
 import FlightLeg from '../FlightLeg/FlightLeg';
 import AppPropTypes from '../../prop-types';
-
-const c = (className) => STYLES[className] || 'UNKNOWN';
+import './FlightCardDetails.css';
 
 const FlightCardFooter = (itinerary, currencySymbol) => (
-  <div className={c('FlightCardDetails__footer')}>
-    <div className={c('FlightCardDetails__footer-amount')}>
-      <p>
+  <div className="card-footer-container">
+    <div className="card-footer-amount-wrapper">
+      <div className="card-footer-amount">
         {currencySymbol}
         {itinerary.PricingOptions[0].Price}
-      </p>
-      <p className={c('FlightCardDetails__footer-agent')}>{itinerary.PricingOptions[0].Agents[0].Name}</p>
+      </div>
+      <div className="card-footer-agent">{itinerary.PricingOptions[0].Agents[0].Name}</div>
     </div>
     {/* eslint-disable-next-line react/button-has-type */}
-    <button>
+    <button className="card-select-btn">
       Select
     </button>
   </div>
@@ -26,7 +24,7 @@ const FlightCardFooter = (itinerary, currencySymbol) => (
 const FlightCardDetails = (props) => {
   const { itinerary, itinerary: { outboundLeg, inboundLeg }, currencySymbol } = props;
   return (
-    <div className={c('FlightCardDetails__parent-container')}>
+    <div className="flightCardDetailsContainer">
       <div>
         <FlightLeg flightLeg={outboundLeg} />
         <FlightLeg flightLeg={inboundLeg} />

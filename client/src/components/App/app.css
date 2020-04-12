@@ -1,0 +1,30 @@
+body {
+    background: #fafafa;
+}
+.app {
+    max-width: 768px;
+    position: relative;
+    background: #fff;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 4px;
+}
+.mainComponent {
+
+}
+.load-container {
+    display: inline-block;
+    width: 2.2rem;
+    height: 100%;
+    margin: 0 0 0 auto;
+}
+.loader {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 12px 0;
+    border: 2px solid #fff;
+    border-top: 2px solid #fff;
+    top: 30%;
+    left: 10%;
+}

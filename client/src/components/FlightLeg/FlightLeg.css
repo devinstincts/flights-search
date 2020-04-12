@@ -1,0 +1,49 @@
+.flight-leg {
+    margin-bottom: 8px;
+}
+.flight-details-row {
+    display: flex;
+    align-items: center;
+}
+.flight-carrier-img {
+    display: inline-block;
+    width: 60px;
+    height: 32px;
+}
+.flight-total-duration {
+    justify-self: flex-end;
+}
+.flight-time-source-dest {
+    flex: 1;
+    min-Width: 200px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+.flight-source-dest-details {
+    margin-left: 20px;
+}
+.flight-leg-arrow-icon {
+    height: 16px;
+    display: inline-flex;
+    align-items: center;
+    margin: 0 8px 0 28px;
+}
+.flight-time {
+    font-weight: bold;
+}
+.flight-code {
+    color: #4c4c4c;
+    opacity: 0.8;
+    font-weight: 500;
+}
+.fight-total-time {
+    color: #4c4c4c;
+    font-size: 12px;
+    opacity: 0.8;
+}
+.flight-direct {
+    color: #00ca6e;
+    font-weight: bold;
+    font-size: 13px;
+}

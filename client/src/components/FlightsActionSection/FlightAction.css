@@ -1,0 +1,33 @@
+.flightActionsContainer {
+    height: 50px;
+    padding: 15px;
+    background: #fff;
+    color: #00b2d6;
+    font-size: 18px;
+    display: flex;
+}
+.flightSortFilterActionContainer {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+.flight-filter-sort-action {
+    text-align: left;
+    flex: 1;
+    cursor: pointer;
+}
+.flightPriceAlterContainer {
+    flex: 1;
+    text-align: right;
+    justify-self: flex-end;
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.flight-action-image {
+    height: 18px;
+    width: 18px;
+    margin-right: 8px;
+    display: inline-block;
+}

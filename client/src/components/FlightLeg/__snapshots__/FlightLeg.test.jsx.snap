@@ -2,57 +2,67 @@
 
 exports[`FlightLeg should render correctly 1`] = `
 <div
-  className="UNKNOWN"
+  className="flight-leg"
 >
   <div
-    className="UNKNOWN"
+    className="flight-details-row"
   >
-    <span
-      className="UNKNOWN"
-    >
-      <img
-        alt="BA"
-        className="UNKNOWN"
-        src="https://s1.apideeplink.com/images/airlines/BA.png"
-      />
-    </span>
-    <div
-      className="UNKNOWN"
-    >
-      <p>
-        19:05
-      </p>
-      <p>
-        LHR
-      </p>
-    </div>
     <img
-      alt="To"
-      className="UNKNOWN"
-      src="right-arrow.svg"
+      alt="BA"
+      className="flight-carrier-img"
+      src="https://s1.apideeplink.com/images/airlines/BA.png"
     />
     <div
-      className="UNKNOWN"
+      className="flight-time-source-dest"
     >
-      <p>
-        20:30
-      </p>
-      <p>
-        EDI
-      </p>
+      <div
+        className="flight-source-dest-details"
+      >
+        <div
+          className="flight-time"
+        >
+          11:05
+        </div>
+        <div
+          className="flight-code"
+        >
+          LHR
+        </div>
+      </div>
+      <img
+        alt="To"
+        className="flight-leg-arrow-icon"
+        src="right-arrow.svg"
+      />
+      <div
+        className="flight-source-dest-details"
+      >
+        <div
+          className="flight-time"
+        >
+          12:3
+        </div>
+        <div
+          className="flight-code"
+        >
+          EDI
+        </div>
+      </div>
     </div>
-  </div>
-  <div
-    className="UNKNOWN"
-  >
-    <p>
-      1h 25m
-    </p>
-    <p
-      className="UNKNOWN"
+    <div
+      className="flight-total-duration"
     >
-      Direct
-    </p>
+      <div
+        className="fight-total-time"
+      >
+        1h 25m
+      </div>
+      <div
+        className="flight-direct"
+      >
+        Direct
+      </div>
+    </div>
   </div>
 </div>
 `;

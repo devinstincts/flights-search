@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-import STYLES from './App.scss';
 import Header from '../Header';
 import OriginDestination from '../OriginDestination';
 import FlightsActionSection from '../FlightsActionSection';
@@ -16,8 +15,8 @@ import {
 import selectors from '../../selectors';
 import AppPropTypes from '../../prop-types';
 import Loader from '../Loader';
+import './app.css';
 
-const c = (className) => STYLES[className] || 'UNKNOWN';
 
 const queryParams = {
   cabinClass: 'Economy',
@@ -63,12 +62,12 @@ class App extends React.Component {
   render = () => {
     const { searchResults } = this.props;
     return (
-      <div className={c('App')}>
+      <div className="app">
         <Header />
         {
           searchResults
             ? (
-              <main className={c('App__main')}>
+              <main className="mainComponent">
                 <OriginDestination query={searchResults.Query} />
                 <FlightsActionSection />
                 <FlightCard
@@ -76,7 +75,7 @@ class App extends React.Component {
                   currencySymbol={searchResults.Currencies[0].Symbol}
                 />
               </main>
-            ) : <Loader className={c('App__loader')} loadingNotification="Searching for flights" />
+            ) : <Loader loadingNotification="Searching for flights" />
         }
       </div>
     );

@@ -2,10 +2,10 @@
 
 exports[`Loader should render correctly 1`] = `
 <div
-  className="UNKNOWN"
+  className="load-container"
 >
   <div
-    className="UNKNOWN"
+    className="loader"
   />
 </div>
 `;

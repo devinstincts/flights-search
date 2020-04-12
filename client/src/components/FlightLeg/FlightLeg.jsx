@@ -1,46 +1,42 @@
 import React from 'react';
-import STYLES from './FlightLeg.scss';
 import rightArrowIcon from './right-arrow.svg';
 import util from '../../util';
 import AppPropTypes from '../../prop-types';
+import './FlightLeg.css';
 
-const c = (className) => STYLES[className] || 'UNKNOWN';
-
-const BLOCK_NAME = 'FlightLeg';
-
-const stopsTextClass = (value) => (value === 'Direct' ? c(`${BLOCK_NAME}__duration-details__stops_text`) : '');
+const stopsTextClass = (value) => (value === 'Direct' ? 'flight-direct' : 'flight-stop');
 
 const FlightLeg = ({ flightLeg }) => {
   const departure = new Date(`${flightLeg.Departure}Z`);
   const arrival = new Date(`${flightLeg.Arrival}Z`);
   const stopText = util.stopsText(flightLeg.Stops);
   return (
-    <div className={c(BLOCK_NAME)}>
-      <div className={c(`${BLOCK_NAME}__OND-container`)}>
-        <span className={c(`${BLOCK_NAME}__OND-icon`)}>
-          <img
-            className={c(`${BLOCK_NAME}__OND-carrier-image`)}
-            alt={flightLeg.Carriers[0].Code}
-            src={flightLeg.Carriers[0].ImageUrl}
-          />
-        </span>
-        <div className={c(`${BLOCK_NAME}__origin-details`)}>
-          <p>
-            {`${departure.toLocaleTimeString().substr(0, 5)}`}
-          </p>
-          <p>{flightLeg.OriginStation.Code}</p>
+    <div className="flight-leg">
+      <div className="flight-details-row">
+        <img
+          className="flight-carrier-img"
+          alt={flightLeg.Carriers[0].Code}
+          src={flightLeg.Carriers[0].ImageUrl}
+        />
+        <div className="flight-time-source-dest">
+          <div className="flight-source-dest-details">
+            <div className="flight-time">
+              {`${departure.toLocaleTimeString().substr(0, 5)}`}
+            </div>
+            <div className="flight-code">{flightLeg.OriginStation.Code}</div>
+          </div>
+          <img className="flight-leg-arrow-icon" alt="To" src={rightArrowIcon} />
+          <div className="flight-source-dest-details">
+            <div className="flight-time">
+              {`${arrival.toLocaleTimeString().substr(0, 4)}`}
+            </div>
+            <div className="flight-code">{flightLeg.DestinationStation.Code}</div>
+          </div>
         </div>
-        <img className={c(`${BLOCK_NAME}__OND-right-icon`)} alt="To" src={rightArrowIcon} />
-        <div className={c(`${BLOCK_NAME}__destination-details`)}>
-          <p>
-            {`${arrival.toLocaleTimeString().substr(0, 5)}`}
-          </p>
-          <p>{flightLeg.DestinationStation.Code}</p>
+        <div className="flight-total-duration">
+          <div className="fight-total-time">{util.minutesInHrsAndMins(flightLeg.Duration)}</div>
+          <div className={stopsTextClass(stopText)}>{stopText}</div>
         </div>
-      </div>
-      <div className={c(`${BLOCK_NAME}__duration-details`)}>
-        <p>{util.minutesInHrsAndMins(flightLeg.Duration)}</p>
-        <p className={stopsTextClass(stopText)}>{stopText}</p>
       </div>
     </div>
   );

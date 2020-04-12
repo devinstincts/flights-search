@@ -1,15 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import STYLES from './FlightCard.scss';
 import FlightCardDetails from '../FlightCardDetails';
 import AppPropTypes from '../../prop-types';
-
-const c = (className) => STYLES[className] || 'UNKNOWN';
+import './FlightCard.css';
 
 const FlightCard = (props) => {
   const { itineraries, currencySymbol } = props;
   return (
-    <div className={c('FlightCard__container')}>
+    <div className="flightCardContainer">
       {
         itineraries.map((itinerary) => (
           <FlightCardDetails

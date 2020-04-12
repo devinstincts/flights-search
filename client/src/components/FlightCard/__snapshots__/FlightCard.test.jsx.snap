@@ -2,7 +2,7 @@
 
 exports[`FlightCard snapshot 1`] = `
 <div
-  className="UNKNOWN"
+  className="flightCardContainer"
 >
   <FlightCardDetails
     currencySymbol="£"

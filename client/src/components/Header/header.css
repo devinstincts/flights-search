@@ -1,0 +1,22 @@
+.headerContainer {
+    height: 32px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.headerContainer a.header-anchor {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header-logo {
+    width: 24px;
+    height: 24px;
+}
+.header-company-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 8px;
+}

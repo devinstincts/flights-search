@@ -1,20 +1,18 @@
 import React from 'react';
-import STYLES from './OriginDestination.scss';
 import rightArrowIcon from './right-arrow.svg';
 import AppPropTypes from '../../prop-types';
-
-const c = (className) => STYLES[className] || 'UNKNOWN';
+import './OriginDestination.css';
 
 const OriginDestination = (props) => {
   const { query } = props;
   return (
-    <div className={c('OriginDestination__container')}>
-      <div>
-        <span className={c('OriginDestination__origin')}>{query.OriginPlace.Code}</span>
-        <img className={c('OriginDestination__right-icon')} alt="To" src={rightArrowIcon} />
-        <span className={c('OriginDestination__destination')}>{query.DestinationPlace.Code}</span>
+    <div className="originDestinationContainer">
+      <div className="origin-wrapper">
+        <span className="origin-dest-source">{query.OriginPlace.Code}</span>
+        <img className="origin-arrow-icon" alt="To" src={rightArrowIcon} />
+        <span className="origin-dest-source">{query.DestinationPlace.Code}</span>
       </div>
-      <div>
+      <div className="origin-traveller-info">
         <span>
           {query.Adults + query.Children + query.Infants}
           {' '}

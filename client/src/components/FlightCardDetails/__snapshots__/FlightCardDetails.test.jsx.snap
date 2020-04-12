@@ -2,7 +2,7 @@
 
 exports[`FlightCardDetails snapshot 1`] = `
 <div
-  className="UNKNOWN"
+  className="flightCardDetailsContainer"
 >
   <div>
     <FlightLeg
@@ -312,22 +312,26 @@ exports[`FlightCardDetails snapshot 1`] = `
     />
   </div>
   <div
-    className="UNKNOWN"
+    className="card-footer-container"
   >
     <div
-      className="UNKNOWN"
+      className="card-footer-amount-wrapper"
     >
-      <p>
+      <div
+        className="card-footer-amount"
+      >
         £
         502.38
-      </p>
-      <p
-        className="UNKNOWN"
+      </div>
+      <div
+        className="card-footer-agent"
       >
         ebookers
-      </p>
+      </div>
     </div>
-    <button>
+    <button
+      className="card-select-btn"
+    >
       Select
     </button>
   </div>

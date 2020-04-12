@@ -1,0 +1,28 @@
+.flightCardDetailsContainer {
+    background: #fff;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+.card-footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.card-footer-amount {
+    font-size: 20px;
+    font-weight: bold;
+}
+.card-footer-agent {
+    color: #B0B0B1;
+}
+button.card-select-btn {
+    padding: 6px 31px;
+    background: #00ca6e;
+    border-radius: 25px;
+    color: #fff;
+    border: 0;
+    font-weight: bold;
+    height: 35px;
+    font-size: 14px;
+}

@@ -1,0 +1,22 @@
+.originDestinationContainer {
+    height: 80px;
+    background: #00b2d6;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+.origin-dest-source {
+    font-size: 35px;
+    display: inline-flex;
+    line-height: 40px;
+}
+.origin-traveller-info {
+    opacity: 0.8;
+    font-size: 16px;
+}
+.origin-arrow-icon {
+    display: inline-flex;
+    padding: 0 8px;
+    align-items: center;
+    height: 22px;
+}
