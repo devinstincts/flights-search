@@ -14,10 +14,15 @@ branches:
   only:
     - master
 script:
-    - npm run install:all
-    - npm run lint:all
-    - npm run test:all
-    - npm run build:all
+    - npm install
+    - npm run install:client
+    - npm run install:server
+    - npm run lint:client
+    - npm run lint:server
+    - npm run test:client
+    - npm run test:server
+    # - npm run build:client
+    # - npm run build:server
 # Pipe the coverage data to Code Climate
 after_script:
   - ./cc-test-reporter format-coverage -t simplecov -o client/coverage/coverage-final.json client/coverage/lcov.info # client coverage
