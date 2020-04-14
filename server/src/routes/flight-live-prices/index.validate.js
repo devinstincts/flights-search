@@ -9,8 +9,8 @@ const flightLivePricesApiValidationLayer = validate({
   //     "Accept": joi.string().optional().valid('application/json', 'application/xml')
   // },
   query: {
-    originPlace: joi.string().required(),
-    destinationPlace: joi.string().required(),
+    originPlace: joi.string().uppercase().length(3).required(),
+    destinationPlace: joi.string().uppercase().length(3).required(),
     outboundDate: joi.date().required().greater('now'),
     inboundDate: joi.date().optional().greater('now'),
     cabinClass: joi.string().optional().valid('Economy', 'PremiumEconomy', 'Business', 'First'),

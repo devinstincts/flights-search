@@ -1,7 +1,7 @@
 ## Flight Search App
-The objective of this App is to hit an endpoint to list flights according to a certain criteria and show the the results in a list view to the end user.
+The objective of this App is to hit an endpoint to list flights according to a certain criterion and show the results in a list view to the end user.
 
-The landing page calls the GET flights API with a certian criteria on the page load and displays the results in a list view. CI has been configured using Travis and every commit to the master branch triggers a Travis build which runs the linting and test cases. In addition, Code Climate quality check has been configured for every commit on to the master branch.
+The landing page calls the GET flights API with a certain criteria on the page load and displays the results in a list view. CI has been configured using Travis and every commit to the master branch triggers a Travis build which runs the linting and test cases. In addition, Code Climate quality check has been configured for every commit on to the master branch.
 
 ## Tech/framework used
 
@@ -17,7 +17,7 @@ Repo has both the frontend and backend code in the following directories.
 - server
 
 ## Installing
-Run the below command to install the node_modules `npm run install:all`. This would run the required modules for the root, client, and server.
+Run the below command to install the node_modules `npm run install:all`. This would install the required modules for the root, client, and server.
 
 ## Running the application
 Once the `node_modules` installed, use the below commands to run the application.
