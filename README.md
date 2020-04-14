@@ -41,6 +41,6 @@ These commands will run the test cases and collects the coverage report under th
 [![codecov](https://codecov.io/gh/devinstincts/flights-search/branch/master/graph/badge.svg)](https://codecov.io/gh/devinstincts/flights-search)
 
 
-## Code Cliamte Quality report
+## Code Climate Quality report
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/dc235259abf236efb5cc/maintainability)](https://codeclimate.com/github/devinstincts/flights-search/maintainability)
